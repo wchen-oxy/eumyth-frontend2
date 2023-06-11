@@ -1,0 +1,34 @@
+.customimageslider-new-post-hero-container {
+    height: $small-post-draft-image-height;
+    max-height: $small-post-draft-image-height;
+    background-color: black;
+    img {
+        min-height: $small-post-draft-image-height;
+        max-height: $small-post-draft-image-height;
+        object-fit: contain;
+    }
+}
+
+.customimageslider-hero-container {
+    background-color: black;
+    img {
+        max-height: $small-post-image-height;
+        object-fit: contain;
+    }
+}
+
+.customimageslider-expanded img {
+    min-height: $small-post-image-height;
+    background-color: black;
+}
+
+.customimageslider-expand-container {
+    margin: 4px auto;
+    button {
+        @extend %button-style;
+    }
+    button:hover{
+        @extend %button-style;
+        background-color: $button-hover;
+    }
+}

@@ -1,0 +1,30 @@
+#shorteditor-text {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#shorteditor-main {
+    @include flex-display-row;
+}
+
+#shorteditor-hero {
+    width: 65%;
+    justify-content: center;
+    text-align: center;
+    #shorteditor-images {
+        // background-color: black;
+    }
+}
+#shorteditor-side-container {
+    width: 35%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#shorteditor-files {
+    @include flex-display-column;
+    h4 {
+        text-align: center;
+    }
+}
+
+// https://github.com/kenwheeler/slick/issues/982

@@ -1,0 +1,41 @@
+.postheader {
+    @include flex-display-row;
+    margin: 10px 0;
+    justify-content: space-between;
+
+    button {
+        height: fit-content;
+    }
+}
+
+.postheader-author {
+    @include flex-display-row;
+    align-items: center;
+
+    img,
+    h4 {
+        margin: 0;
+    }
+    p {
+        font-size: 13px;
+        margin: 0;
+    }
+}
+
+.postheader-dp {
+    img {
+        @include tiny-profile-photo;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.postheader-meta {
+    padding-left: 5px;
+    a {
+        // z-index: $modal-inner;
+    }
+    h4 {
+        @extend %username-link;
+    }
+}

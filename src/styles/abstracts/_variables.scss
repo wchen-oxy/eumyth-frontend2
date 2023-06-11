@@ -1,0 +1,171 @@
+//colors
+$primary-color: #ed4071;
+$primary-color-faded: #ff8aa5;
+$primary-text-color: black;
+
+//reds
+$red-900: #4e0e2e;
+$red-800: #700230;
+$red-700: #8d0130;
+$red-600: #c41d43;
+$red-500: #e8264d;
+$red-400: #f54d6b;
+$red-300: #f7788f;
+$red-200: #feb3c0;
+$red-100: #ffebee;
+
+//blues
+$blue-900: #042153;
+$blue-800: #0c2d6f;
+$blue-700: #0b329d;
+$blue-600: #1d43c4;
+$blue-500: #5374e9;
+$blue-400: #738afc;
+$blue-300: #98aafb;
+$blue-200: #dce1ff;
+$blue-100: #f1f2fe;
+
+//black
+$black-900: #2c2c2c;
+$black-800: #464444;
+$black-700: #5a5959;
+$black-600: #747272;
+$black-500: #8d8d8d;
+$black-400: #a2a1a1;
+$black-300: #c7c5c5;
+$black-200: #e0dddd;
+$black-100: #f8f8f8;
+
+$default-font: "Open Sans", sans-serif;
+$primary-calc-medium-font-size: calc(10px + 2vmin);
+$primary-extra-large-font-size: 30px;
+$primary-large-font-size: 22.5px;
+$primary-medium-font-size: 15px;
+
+$button-hover-color: rgba(
+    $color: #ffffff,
+    $alpha: 0.3,
+);
+
+$event-min-height: 150px;
+$project-event-height: 120px;
+$nav-height: 50px;
+
+//input
+$brief-text-input: 30%;
+$input-slider-width: 100%;
+$input-number: 25%;
+$input-text-long: 50%;
+$input-hero-search: 48px;
+
+//buttons
+$button-action-padding: 12px;
+$button-action-border-radius: 16px;
+$button-hover: $black-700;
+
+//post image buttons
+$button-image-nav-height: 48px;
+//post feed dimension measurments (effectively post width)
+
+$small-post-container-width: 768px;
+
+//post draft
+$small-post-draft-height: calc(100vh - (#{$nav-height}));
+$small-post-draft-padding: 8px;
+
+$small-post-viewer-height: calc(100vh - ((#{$nav-height}) * 2));
+$small-post-width: 95vw;
+$feed-post-padding-size: 16px;
+//shared button dimensions
+$small-button-window: 19vh;
+$small-post-draft-modal-height: calc((#{$small-post-viewer-height}) - (#{$nav-height}));
+$small-post-draft-image-height: calc((#{$small-post-draft-modal-height}) - 300px);
+$small-post-image-height: calc((#{$small-post-viewer-height}) - (#{$nav-height}));
+
+//image nav
+$image-nav-container-height: 48px;
+
+//step indicator
+$size-step-indicator: 48px;
+
+//z-indexes
+$navbar: 10;
+$overlay: 20;
+// $modal-inner: 30;
+$content-window: 25;
+
+$overlay-super: 35;
+$window-upper: 23;
+
+%username-link {
+    color: $black-800;
+}
+
+%title-texts {
+    font-size: $primary-large-font-size;
+    font-weight: 200;
+}
+
+%navbar-text {
+    @include no-select;
+    margin: auto;
+    color: white;
+    font-family: $default-font;
+}
+
+%button-style {
+    height: fit-content;
+    padding: 12px;
+    color: $black-900;
+    background-color: $black-100;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 12px;
+    user-select: none;
+}
+
+$event-width: 220px;
+%event-container {
+    @include no-select;
+    text-align: initial;
+    width: $event-width;
+    max-width: $event-width;
+    background-color: $black-100;
+    word-wrap: break-word;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+$post-width: 300px;
+%post-container {
+    @include no-select;
+    text-align: initial;
+    width: $post-width;
+    max-width: $post-width;
+    background-color: $black-100;
+    word-wrap: break-word;
+    border-radius: 5px;
+    cursor: pointer;
+}
+$project-width: 640px;
+%project-container {
+    @include no-select;
+    text-align: initial;
+    width: $project-width;
+    max-width: $project-width;
+    background-color: $black-100;
+    word-wrap: break-word;
+    border-radius: 5px;
+    cursor: pointer;
+    h2 {
+        text-align: center;
+    }
+}
+
+%label {
+    border-radius: 10%;
+    padding: 4px;
+    p {
+        color: white;
+    }
+}

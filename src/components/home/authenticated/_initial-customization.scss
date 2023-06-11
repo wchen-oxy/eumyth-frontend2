@@ -1,0 +1,41 @@
+#initialcustomization {
+    @include flex-display-row;
+    justify-content: center;
+    margin-bottom: 10vh;
+
+    form {
+        @include flex-display-column;
+        justify-content: center;
+        width: 55%;
+    }
+
+    p {
+        margin: 0 auto;
+    }
+    input,
+    label,
+    span {
+        margin-bottom: 1vh;
+    }
+    span {
+        margin-top: 1vh;
+    }
+}
+
+#initialcustomization-dp {
+    @include main-profile-photo-container;
+}
+
+.initialcustomization-select {
+    @include flex-display-row;
+}
+
+.initialcustomization-content {
+    @include flex-display-column;
+    padding: 2vh;
+
+    button {
+        @extend %button-style;
+        margin-top: 24px;
+    }
+}

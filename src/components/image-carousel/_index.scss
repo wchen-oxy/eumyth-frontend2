@@ -1,0 +1,36 @@
+.imageslider-image-container {
+  height: 100%;
+  overflow: visible;
+  width: 100%;
+  
+  // background-color: black;
+
+  img {
+    height: 100%;
+    margin: auto;
+    object-fit: contain;
+  }
+}
+
+.slick-slider {
+  height: 100%;
+}
+
+.slick-list {
+  height: 100%;
+}
+
+.slick-track {
+  display: flex;
+  height: 100%;
+}
+
+.slick-track .slick-slide {
+  display: flex;
+  height: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgba(255, 255, 255, 0.932);
+}

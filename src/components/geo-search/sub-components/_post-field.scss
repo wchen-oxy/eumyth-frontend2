@@ -1,0 +1,11 @@
+.postfield {
+    @include flex-display-row;
+    margin: 0 auto;
+}
+
+.postfield-toggle {
+    padding: 20px;
+}
+.postfield-label {
+    padding-right: 5px;
+}

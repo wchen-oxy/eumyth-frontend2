@@ -1,0 +1,31 @@
+#welcomeloginform-form {
+    margin-bottom: 25px;
+}
+
+#welcomelogin-forgot {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.welcomeloginform-text {
+    input {
+        width: 100%;
+    }
+}
+
+.welcomeloginform-button,
+.welcomeloginform-button:hover {
+    @extend %button-style;
+}
+
+.welcomeloginform-button:hover {
+    @include default-button-hover;
+}
+
+.welcomeloginform-onboard {
+    margin: 0 auto;
+    text-align: center;
+    p {
+        padding-bottom: 8px;
+    }
+}

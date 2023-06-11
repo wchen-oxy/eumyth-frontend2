@@ -1,0 +1,19 @@
+.spotlightevent {
+    margin: 5px;
+    background-color: grey;
+    width: 100%;
+}
+
+.spotlightevent-cover {
+    overflow: hidden;
+
+    height: 140px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.spotlightevent-description {
+    height: 100px;
+}

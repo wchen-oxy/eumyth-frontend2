@@ -1,0 +1,21 @@
+#eventlabels-full {
+    @include flex-display-row;
+    margin-left: 50px;
+}
+#eventlabels-partial {
+    @include flex-display-row;
+}
+
+.eventlabels-background {
+    padding: 1px;
+}
+.eventlabels-foreground {
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: grey;
+    width: fit-content;
+    margin: 0 2px;
+    p {
+        color: white;
+    }
+}

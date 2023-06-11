@@ -1,0 +1,5 @@
+#activitybuttons {
+    @include flex-display-row;
+    justify-content: space-evenly;
+    margin-top: auto;
+}

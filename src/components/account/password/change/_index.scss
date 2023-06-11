@@ -1,0 +1,6 @@
+#passwordchange{
+    @include flex-display-column;
+    form {
+        @include flex-display-column;
+    }
+}

@@ -1,0 +1,110 @@
+#profile-margin {
+    margin: 96px 48px 0 48px;
+}
+
+#profile-main {
+    @include flex-display-column;
+    max-width: 940px;
+    width: 100%;
+    margin: auto;
+}
+
+#profile-cover {
+    height: 345px;
+    background-color: #ffffff;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+#profile-upper {
+    @include flex-display-row;
+}
+
+#profile-upper-right {
+    margin-left: 48px;
+}
+
+#profile-upper-user-info {
+    @include flex-display-row;
+    margin-top: 32px;
+}
+
+#profile-intro {
+    display: block;
+    background-color: #ffffff;
+}
+
+#profile-dp {
+    background-color: $black-200;
+    margin-left: 32px;
+    margin-top: 32px;
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+
+    img {
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+#profile-name {
+    margin: auto 0;
+    h3 {
+        margin: 0;
+    }
+}
+
+#profile-actions {
+    @include flex-display-row;
+    margin: auto 0;
+
+    padding-left: 8px;
+    button {
+        @extend %button-style;
+    }
+}
+
+#profile-biography {
+    // @include flex-display-column;
+    // margin-top: 80px;
+    // margin-left: 80px;
+    // margin-right: 80px;
+}
+
+#profile-pursuits {
+    @include flex-display-row;
+    width: 100%;
+    justify-content: center;
+}
+
+#profile-content-switch {
+    @include flex-display-row;
+    justify-content: center;
+    width: 100%;
+    margin: 24px auto;
+    max-width: 940px;
+}
+
+.profile-content-selected,
+.profile-content-unselected {
+    @extend %button-style;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.profile-content-selected {
+    @include default-button-disabled;
+}
+
+.profile-content-unselected:hover {
+    @include default-button-hover;
+}

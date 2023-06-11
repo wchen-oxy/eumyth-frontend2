@@ -1,0 +1,32 @@
+.event-first {
+    @extend %event-container;
+}
+
+.event-middle {
+    @extend %event-container;
+    margin-bottom: 10px;
+}
+
+.event-last {
+    @extend %event-container;
+}
+
+.post-first {
+    @extend %post-container;
+}
+
+.post-second {
+    @extend %post-container;
+}
+
+.post-third {
+    @extend %post-container;
+}
+
+.project-one {
+    @extend %project-container;
+}
+
+.project-two {
+    @extend %project-container;
+}

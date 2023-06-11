@@ -1,0 +1,34 @@
+#welcomeregisterform-form {
+    margin-bottom: 25px;
+    p {
+        margin-top: 12px;
+        margin-bottom: 36px;
+        font-size: 14px;
+    }
+}
+
+#welcomeregisterform-register:disabled {
+    background-color: rgb(197, 197, 197);
+}
+
+.welcomeregisterform-text {
+    input {
+        width: 100%;
+    }
+}
+
+.welcomeregisterform-button,
+.welcomeregisterform-button:hover {
+    @extend %button-style;
+}
+.welcomeregisterform-button:hover {
+    @include default-button-hover;
+}
+
+.welcomeregisterform-onboard {
+    margin: 0 auto;
+    text-align: center;
+    p {
+        padding-bottom: 8px;
+    }
+}

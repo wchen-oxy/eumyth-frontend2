@@ -1,0 +1,28 @@
+#tiny-text,
+#medium-text {
+    pre {
+        overflow-x: auto;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+#tiny-text {
+    display: flex;
+    align-items: center;
+}
+
+#medium-text {
+    overflow: scroll;
+}
+
+.shortherotext-title-container {
+    h2 {
+        
+        text-align: center;
+        margin: 0;
+    }
+}

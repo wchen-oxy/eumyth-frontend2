@@ -1,0 +1,4 @@
+outdated 
+recompose
+react-image-annotation
+react-sortable-hoc

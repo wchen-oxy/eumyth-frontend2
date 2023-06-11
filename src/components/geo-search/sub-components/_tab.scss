@@ -1,0 +1,32 @@
+.tab{
+    background-color: lightcyan;
+    height: auto;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+
+    h3 {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.tab-dp{
+    @include flex-display-row;
+    align-items: center;
+    img {
+        @include tiny-profile-photo;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+}
+
+.tab-meta{
+    @include flex-display-column;
+    justify-content: center;
+}
+
+.tab-event{
+    margin-top: 20px;
+}

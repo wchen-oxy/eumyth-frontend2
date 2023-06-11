@@ -1,0 +1,11 @@
+#account {
+    @include flex-display-column;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.account-section {
+    @include flex-display-column;
+    // margin-top: 16px;
+    // margin-bottom: 16px;
+}

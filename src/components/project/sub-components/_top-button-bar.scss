@@ -1,0 +1,29 @@
+#topbuttonbar-right-only-button-bar {
+    @include flex-display-column;
+    align-items: flex-end;
+    padding-top: 20px;
+}
+
+#topbuttonbar-dual-button-bar {
+    @include flex-display-row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#topbuttonbar-left-button,
+#topbuttonbar-right-button {
+    @extend %button-style;
+}
+
+#topbuttonbar-left-button:hover,
+#topbuttonbar-right-button:hover{
+    @extend %button-style;
+    @include default-button-hover;
+}
+
+#topbuttonbar-right-button {
+    float: right;
+    p {
+        font-size: 12px;
+        margin: 0;
+    }
+}

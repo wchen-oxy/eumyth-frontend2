@@ -1,0 +1,22 @@
+.eventbottominfo {
+    @include flex-display-column;
+    @include lower-text-container;
+    position: relative;
+
+    .eventbottominfo-dynamic {
+        @include flex-display-column;
+        flex-grow: 1;
+        justify-content: space-between;
+        .eventbottominfo-labels {
+            @include flex-display-row;
+            flex-wrap: wrap;
+        }
+    }
+    .eventbottominfo-comment {
+        padding: 0 4px;
+        p {
+            margin: 0 auto;
+            font-size: 14px;
+        }
+    }
+}

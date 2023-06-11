@@ -1,0 +1,67 @@
+#sort-by-date-button {
+    float: right;
+}
+
+.projectcontroller-event {
+    display: inline-block;
+}
+
+.projectcontroller-field {
+    margin: 4px;
+    @include flex-display-column;
+}
+
+.projectcontroller-submit-buttons {
+    margin-top: 4px;
+    button {
+        margin: 8px;
+    }
+}
+
+#projectcontroller-submit {
+    @include flex-display-column;
+    span {
+        color: $black-500;
+        font-size: 14px;
+    }
+}
+
+#projectcontroller-sortable-list {
+    ul {
+        padding: 0;
+    }
+}
+
+#projectcontroller-content {
+    margin-top: 50px;
+}
+
+#projectcontroller-return {
+    padding-top: 20px;
+    button {
+        @extend %button-style;
+    }
+    button:hover {
+        @extend %button-style;
+    }
+}
+
+.projectcontroller-checkbox-span {
+    width: fit-content;
+    input {
+        width: auto;
+    }
+}
+
+.projectcontroller-btn-enabled,
+.projectcontroller-btn-disabled {
+    @extend %button-style;
+}
+.projectcontroller-btn-enabled:hover {
+    @extend %button-style;
+    @include default-button-hover;
+}
+
+.projectcontroller-btn-disabled {
+    @include default-button-disabled;
+}

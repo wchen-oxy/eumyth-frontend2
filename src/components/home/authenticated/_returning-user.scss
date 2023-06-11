@@ -1,0 +1,44 @@
+a#returninguser {
+    margin-top: 100px;
+}
+
+#returninguser-feed {
+    @include flex-display-column;
+}
+
+#returninguser-infinite-scroll {
+    margin: auto;
+    width: $small-post-container-width;
+    @include flex-display-column;
+
+    .returninguser-feed-object {
+        border-style: solid;
+        border-width: 1px;
+        background-color: white;
+        border-color: rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        margin: 50px;
+    }
+}
+
+.returninguser-title {
+    @extend %title-texts;
+}
+
+.returninguser-main-row {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding: 2vh;
+
+    a {
+        @include link-decoration;
+    }
+}
+
+.friendfeed-object {
+    padding: $feed-post-padding-size;
+}
+
+.extrafeed-object {
+    padding: $feed-post-padding-size;
+}

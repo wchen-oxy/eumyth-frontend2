@@ -1,0 +1,45 @@
+#relationmodal {
+    z-index: $content-window;
+}
+
+#relationmodal-relations {
+    @include flex-display-row;
+}
+
+.relationmodal-button,
+.relationmodal-button:hover {
+    @extend %button-style;
+    margin: 5px;
+}
+
+.relationmodal-button:hover {
+    @include default-button-hover;
+}
+
+.relationmodal-column {
+    width: 33.32%;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.relationmodal-profile-row {
+    @include flex-display-column;
+    align-items: center;
+
+    img {
+        @include tiny-profile-photo;
+        border-radius: 50%;
+        padding-right: 5px;
+        object-fit: cover;
+    }
+}
+
+.relationmodal-profile-info-container {
+    @include flex-display-row;
+    a {
+        @include link-decoration;
+        margin: auto;
+    }
+}

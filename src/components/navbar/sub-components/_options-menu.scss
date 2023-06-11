@@ -1,0 +1,25 @@
+#optionsmenu-pre-click {
+    @include flex-display-row;
+}
+
+#optionsmenu-dropdown {
+    @include flex-display-column;
+    position: absolute;
+    background-color: #ed4071;
+    border-radius: 5px;
+    top: 50px;
+    right: 0;
+}
+
+.optionsmenu-dropdown-inner {
+    height: 20px;
+    width: 200px;
+    padding: 8px;
+    h4 {
+        @extend %navbar-text;
+    }
+}
+
+.optionsmenu-dropdown-inner:hover {
+    cursor: pointer;
+}

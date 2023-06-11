@@ -1,0 +1,132 @@
+#shortpostviewer-margin {
+    margin: 48px 48px 0 48px;
+}
+
+#shortpostviewer-large-hero {
+    @include flex-display-row;
+    height: $small-post-viewer-height;
+    width: 100%;
+}
+
+#shortpostviewer-large-inline-header {
+    padding-left: 10px;
+}
+#shortpostviewer-post-view {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+#shortpostviewer-modal-view {
+    background-color: white;
+    position: fixed;
+    z-index: $content-window;
+    height: $small-post-viewer-height;
+    width: $small-post-width;
+    overflow: scroll;
+}
+
+.shortpostviewer {
+    margin: 0 auto;
+}
+
+.shortpostviewer-window {
+    h2 {
+        text-align: center;
+    }
+}
+
+.shortpostviewer-prev {
+    @include flex-left;
+}
+
+.shortpostviewer-next {
+    @include flex-right;
+}
+
+.shortpostviewer-inline {
+    z-index: 25;
+}
+
+.shortpostviewer-large-hero-image {
+    height: auto;
+}
+
+.shortpostviewer-large-side {
+    @include flex-display-column;
+    background-color: white;
+}
+
+.shortpostviewer-large-hero-text {
+    height: auto;
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+}
+
+.shortpostviewer-inline-hero {
+    @include flex-display-column;
+}
+
+.shortpostviewer-inline-side {
+    width: 100%;
+}
+
+.shortpostviewer-secondary-header {
+    @include flex-display-row;
+    justify-content: center;
+    align-items: center;
+
+    .shortpostviewer-date {
+        h4 {
+            padding-left: 24px;
+            color: $black-500;
+        }
+    }
+}
+
+.shortpostviewer-inline-comments {
+    padding: 5px;
+}
+
+.shortpostviewer-title {
+    margin-bottom: 0px;
+}
+
+.shortpostviewer-nav {
+    @include flex-display-row;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    button,
+    button:hover {
+        @extend %button-style;
+        height: fit-content;
+    }
+
+    button:hover {
+        @include default-button-hover;
+    }
+}
+
+.shortpostviewer-bottom-bar {
+    @include flex-display-row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shortpostviewer-expand,
+.shortpostviewer-expand:hover,
+.shortpostviewer-showmeta-disabled,
+.shortpostviewer-showmeta-enabled,
+.shortpostviewer-showmeta-enabled:hover {
+    height: fit-content;
+    @extend %button-style;
+}
+.shortpostviewer-showmeta-disabled {
+    @include default-button-disabled;
+}
+.shortpostviewer-showmeta-enabled:hover,
+.shortpostviewer-expand:hover {
+    @include default-button-hover;
+}

@@ -1,0 +1,47 @@
+#navbar-left,
+#navbar-right {
+    @include flex-display-row;
+    height: 100%;
+
+    h4 {
+        @extend %navbar-text;
+    }
+}
+
+#navbar-logo {
+    @include flex-display-row;
+    h3 {
+        @extend %navbar-text;
+        font-size: $primary-large-font-size;
+    }
+    margin-left: 8px;
+    margin-right: 16px;
+}
+
+nav {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    z-index: $navbar;
+    top: 0;
+    width: 100%;
+    position: fixed;
+
+    button,
+    a {
+        font-size: $primary-medium-font-size;
+        margin: auto 0;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        height: fit-content;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

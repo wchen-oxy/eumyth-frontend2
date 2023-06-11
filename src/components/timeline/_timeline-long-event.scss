@@ -1,0 +1,43 @@
+.longevent-with-cover-photo-container {
+    height: 120px;
+    overflow: hidden;
+}
+
+.longevent-no-cover-photo-container {
+    height: 110px;
+    padding: 5px;
+    overflow: hidden;
+    p {
+        font-size: 14px;
+    }
+}
+
+.longevent-cover-photo {
+    height: auto;
+    width: 100%;
+}
+
+.longevent-subtitle-container {
+    overflow: hidden;
+    margin: 0;
+}
+
+.longevent-text-container {
+    @include lower-text-container;
+    position: relative;
+
+    .longevent-comment-container {
+        position: absolute;
+        bottom: 0;
+    }
+    h4,
+    p {
+        margin: 0 auto;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+}

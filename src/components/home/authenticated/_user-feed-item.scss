@@ -1,0 +1,53 @@
+.userfeeditem-user {
+    @include flex-display-column;
+
+    h3 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .userfeeditem-upper-main {
+        @include flex-display-row;
+        padding-bottom: $feed-post-padding-size;
+
+        .userfeeditem-photo {
+            img {
+                width: 100%;
+            }
+        }
+
+        .userfeeditem-upper-left {
+            width: 39%;
+            margin-top: $feed-post-padding-size;
+            margin-left: $feed-post-padding-size;
+        }
+
+        .userfeeditem-upper-right {
+            width: 59%;
+            margin-top: $feed-post-padding-size;
+            margin-left: $feed-post-padding-size;
+
+            .userfeeditem-upper-right-distance {
+                color: $black-900;
+            }
+
+            .userfeeditem-upper-right-pursuits {
+                h5 {
+                    font-size: 14px;
+                    color: $black-600;
+                    margin-top: 12px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+
+    .userfeeditem-lower-main {
+        width: 64.9;
+        padding: $feed-post-padding-size;
+        border-top: 1px solid $black-200;
+    }
+}
