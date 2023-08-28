@@ -1,0 +1,77 @@
+.emblacarousel-button-container{
+  display: flex;
+  justify-content:space-between;
+}
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  height: $small-post-draft-image-height;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  
+}
+
+
+.embla__slide__number>span {
+  color: var(--brand-primary);
+  background-image: linear-gradient(45deg,
+      var(--brand-primary),
+      var(--brand-secondary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.6rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.embla__button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  color: var(--background-site);
+  // position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // top: 50%;
+  // transform: translateY(-50%);
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+}
+
+.embla__button--prev {
+  left: 1.6rem;
+}
+
+.embla__button--next {
+  right: 1.6rem;
+}
+
+.embla__button:disabled {
+  opacity: 0.3;
+}
+
+.embla__button__svg {
+  width: 65%;
+  height: 65%;
+}

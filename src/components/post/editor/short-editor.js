@@ -5,6 +5,8 @@ import TextContainer from './sub-components/text-container';
 import CustomImageSlider from 'components/image-carousel/custom-image-slider';
 import { withFirebase } from 'store/firebase';
 import { COLLAPSED } from 'utils/constants/flags';
+import SwiperSlider from 'components/swiper-slider';
+import { EmblaCarousel } from 'components/embla-carousel';
 
 var isAdvancedUpload = function () {
     var div = document.createElement('div');
@@ -156,7 +158,7 @@ class ShortEditor extends React.Component {
     }
 
     renderTextContainer() {
-         return (
+        return (
             <TextContainer
                 validFilesLength={this.props.validFiles.length}
                 isPaginated={this.props.isPaginated}
@@ -202,7 +204,9 @@ class ShortEditor extends React.Component {
                             {this.props.unsupportedFiles.length ?
                                 <p>Please remove all unsupported files.</p> : ''}
                             <div id='shorteditor-images'>
-                                <CustomImageSlider
+                                <EmblaCarousel images={this.props.imageArray}/>
+                                {/* <SwiperSlider /> */}
+                                {/* <CustomImageSlider
                                     newPost
                                     hideAnnotations
                                     windowType={COLLAPSED}
@@ -210,7 +214,7 @@ class ShortEditor extends React.Component {
                                     imageIndex={this.props.imageIndex}
                                     onArrowPress={this.props.handleArrowPress}
                                     activeAnnotations={[]}
-                                />
+                                /> */}
                             </div>
                         </div>
                         <div id='shorteditor-side-container'>
